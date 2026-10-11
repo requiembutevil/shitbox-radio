@@ -3,7 +3,7 @@
   "name": "shitbox radio",
   "id": "shitbox-index",
   "description": "i like apples and bananas - nathan south park",
-  "lastUpdate": 28,
+  "lastUpdate": 30,
   "links": {
     "discord": "no"
   },
@@ -221,7 +221,7 @@
         "name": "Ouais Ouais X Cannibal",
         "artist": "Moab93400 on Youtube",
         "category": "Mashup",
-        "startOffset": -10,
+        "startOffset": -10000,
         "url": "https://audio.jukehost.co.uk/01a1294c-d2f4-723a-a57d-350ae29ec4de",
         "songs": [787153]
       }
