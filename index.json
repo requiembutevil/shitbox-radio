@@ -3,7 +3,7 @@
   "name": "shitbox radio",
   "id": "shitbox-index",
   "description": "i like apples and bananas - nathan south park",
-  "lastUpdate": 24,
+  "lastUpdate": 27,
   "links": {
     "discord": "no"
   },
@@ -209,13 +209,21 @@
         "url": "https://audio.jukehost.co.uk/01a128a5-9e2e-70df-b2bf-b99389ea94e7",
         "songs": [1266014]
            },
-      "shiawase-vip-ai-soccer": {
+      "my-jealousy": {
         "name": "MY JEALOUSY",
         "artist": "vivi baby, ovg!",
         "category": "NONG",
         "startOffset": 0,
         "url": "https://audio.jukehost.co.uk/01a12945-0d68-7264-9dd9-b1d694a9fafe",
         "songs": [701013]
+           },
+      "ouasis-ouasis-cannibal": {
+        "name": "Ouais Ouais X Cannibal",
+        "artist": "Moab93400 on Youtube",
+        "category": "Mashup",
+        "startOffset": 0,
+        "url": "https://audio.jukehost.co.uk/01a1294c-d2f4-723a-a57d-350ae29ec4de",
+        "songs": [787153]
       }
     }
   }
