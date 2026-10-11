@@ -172,7 +172,7 @@
       "grief-x-ai-soccer": {
         "name": "Stalemate x Argentina AI Muscle",
         "artist": "KittoGMD on Youtube",
-        "category": "NONG",
+        "category": "Mashup",
         "startOffset": 0,
         "url": "https://audio.jukehost.co.uk/01a127bb-2d8a-70e4-8f5c-4f295b49352c",
         "songs": [482872]
@@ -183,15 +183,31 @@
         "category": "NONG",
         "startOffset": 0,
         "url": "https://audio.jukehost.co.uk/01a127cf-7a8a-707a-8c53-fe2aac4211ed",
-        "songs": [482872]
+        "songs": [233860]
         },
-      "misery": {
+      "misery-TLT": {
         "name": "misery. ( TLT Remix )",
         "artist": "pupsies, The Living Tombstone",
         "category": "NONG",
         "startOffset": 0,
         "url": "https://audio.jukehost.co.uk/01a127cf-84f3-70d8-a943-2f4db821d7a7",
-        "songs": [482872]
+        "songs": [233860]
+                },
+      "shiawase-vip": {
+        "name": "Shiawase VIP",
+        "artist": "Dion Timmer",
+        "category": "NONG",
+        "startOffset": 0,
+        "url": "https://audio.jukehost.co.uk/01a1289a-e45c-72e6-8996-02e91966ee41",
+        "songs": [86407629]
+          },
+      "shiawase-vip-ai-soccer": {
+        "name": "Shiawase VIP x Argentina AI Muscle( ",
+        "artist": "KittoGMD on Youtube",
+        "category": "NONG",
+        "startOffset": 0,
+        "url": "https://audio.jukehost.co.uk/01a1289a-e45c-72e6-8996-02e91966ee41",
+        "songs": [86407629]
       }
     }
   }
