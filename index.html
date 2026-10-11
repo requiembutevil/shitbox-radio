@@ -135,6 +135,12 @@
       font-size: 13px;
     }
 
+    .update-line {
+      color: var(--muted);
+      margin: 7px 0 0;
+      font-size: 11px;
+    }
+
     .toolbar {
       display: flex;
       gap: 10px;
@@ -183,8 +189,7 @@
       font-size: 12px;
     }
 
-    select,
-    .image-button {
+    select, .image-button {
       height: 42px;
       border: 1px solid var(--border);
       border-radius: 9px;
@@ -321,9 +326,8 @@
 
     @media (max-width: 600px) {
       main { padding: 32px 14px 48px; }
-      .topbar { padding: 0 16px; }
+      .topbar { padding: 0 16px; gap: 10px; }
       .toplink { font-size: 11px; }
-      .topbar { gap: 10px; }
       .toolbar { align-items: stretch; flex-direction: column; }
       .sort-wrap { justify-content: space-between; }
       select { max-width: none; flex: 1; }
@@ -351,7 +355,7 @@
         </div>
         <div class="brand-copy">
           <span class="brand-title">poopbox radio</span>
-          <span class="brand-meta">custom GD music</span>
+          <span class="brand-meta">gd songs n stuff</span>
         </div>
       </div>
       <a class="toplink" href="https://raw.githubusercontent.com/starquiem/requiems-jukebox-index/main/index.json" target="_blank" rel="noreferrer">view index JSON ↗</a>
@@ -359,15 +363,15 @@
 
     <main>
       <section class="intro">
-        <div class="eyebrow">geometry dash / music list</div>
         <h1>the songs.</h1>
-        <p class="sub">Everything in the index, in one place.</p>
+        <p class="sub">songs i put in here for gd. thats pretty much it.</p>
+        <p class="update-line">last update: <span id="latestUpdate">—</span></p>
       </section>
 
       <section class="toolbar" aria-label="Song search and sorting">
         <div class="search-wrap">
           <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="search" type="search" placeholder="Search by song, artist, or ID…" autocomplete="off" aria-label="Search songs">
+          <input id="search" type="search" placeholder="search songs, artists, ids..." autocomplete="off" aria-label="Search songs">
         </div>
 
         <label class="sort-wrap" for="sortSongs">
@@ -411,14 +415,14 @@
           <tbody id="songs"></tbody>
         </table>
         <div id="empty" class="empty" hidden>
-          <strong>Nothing here.</strong>
-          Try a different search or filter.
+          <strong>nothing found.</strong>
+          try a different search or category.
         </div>
       </div>
 
       <div class="note">
-        <span>Audio links open on JukeHost. Song IDs are GD song IDs, not level IDs.</span>
-        <a href="https://github.com/starquiem/requiems-jukebox-index" target="_blank" rel="noreferrer">index on GitHub ↗</a>
+        <span>audio is on jukehost. these are song ids, not level ids.</span>
+        <a href="https://github.com/starquiem/shitbox-radio" target="_blank" rel="noreferrer">index on GitHub ↗</a>
       </div>
 
       <footer>
@@ -429,7 +433,7 @@
   </div>
 
   <script>
-    const INDEX_URL = "https://raw.githubusercontent.com/starquiem/requiems-jukebox-index/main/index.json";
+    const INDEX_URL = "https://raw.githubusercontent.com/starquiem/shitbox-radio/refs/heads/main/index.json";
     let songs = [];
 
     const tbody = document.getElementById("songs");
@@ -440,10 +444,11 @@
     const count = document.getElementById("count");
     const visible = document.getElementById("visible");
     const loadstatus = document.getElementById("loadstatus");
+    const latestUpdate = document.getElementById("latestUpdate");
     const customBrandImage = document.getElementById("customBrandImage");
     const defaultBrandImage = document.getElementById("defaultBrandImage");
 
-    // Change this direct image URL whenever you want to replace the top-bar image.
+    // change this URL if you want a different top-bar image
     const BRAND_IMAGE_URL = "https://www.pngkit.com/png/detail/983-9831909_geometry-dash-cube.png";
 
     function setBrandImage(imageUrl) {
@@ -645,7 +650,7 @@
     }
 
     async function loadIndex() {
-      loadstatus.textContent = "fetching index.json";
+      loadstatus.textContent = "loading the index...";
 
       try {
         const response = await fetch(INDEX_URL, {
@@ -657,6 +662,10 @@
         }
 
         const index = await response.json();
+
+        latestUpdate.textContent =
+          index?.lastUpdate != null ? `#${index.lastUpdate}` : "unknown";
+
         const hosted = index?.nongs?.hosted;
 
         if (
@@ -709,23 +718,24 @@
 
         songs.forEach(loadSongDuration);
 
-        loadstatus.textContent =
-          `synced from index.json · ${songs.length} entries`;
+        loadstatus.textContent = `got ${songs.length} songs from the index`;
 
         render();
       } catch (error) {
-        loadstatus.textContent = "could not load index.json";
+        loadstatus.textContent = "couldn't load the index";
+        latestUpdate.textContent = "unavailable";
         count.textContent = "Index failed to load";
         visible.textContent = "check the JSON URL and try again";
+
         empty.hidden = false;
         empty.replaceChildren();
 
         const message = document.createElement("strong");
-        message.textContent = "Could not load songs.";
+        message.textContent = "couldn't load the songs.";
 
         const explanation = document.createElement("span");
         explanation.textContent =
-          " Check that the GitHub JSON is public and valid, then refresh this page.";
+          " check that the JSON is public and valid, then refresh the page.";
 
         empty.append(message, explanation);
 
