@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,8 +13,6 @@
       --text: light-dark(#292721, #ece9e2);
       --muted: light-dark(#777268, #a29da0);
       --border: light-dark(#d2cdc1, #3a383e);
-      --accent: light-dark(#282828, #eeeeea);
-      --accent-text: light-dark(#ffffff, #171717);
       --link: light-dark(#544083, #c5b6ef);
     }
 
@@ -31,202 +28,98 @@
     }
 
     a { color: inherit; }
-    .root { min-height: 100vh; background: var(--page); }
 
     .topbar {
-      height: 62px;
-      border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 clamp(18px, 5vw, 64px);
+      padding: 10px clamp(16px, 5vw, 56px);
+      border-bottom: 1px solid var(--border);
       background: var(--panel);
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      font-weight: 750;
-      letter-spacing: -.035em;
-      font-size: 17px;
-    }
+    .brand { display: flex; align-items: center; gap: 10px; }
 
-    .brand-image-wrap {
-      width: 36px;
-      height: 36px;
-      flex: 0 0 36px;
-      overflow: hidden;
-      border-radius: 4px;
+    .brand-img {
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      background: #5d40a4;
       border: 1px solid var(--border);
-      background: #26232d;
     }
 
-    .brand-image-wrap svg,
-    .brand-image-wrap img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .brand-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .brand-img img[hidden] { display: none; }
 
-    .brand-image-wrap img[hidden] { display: none; }
-    .brand-copy { display: grid; gap: 1px; }
-    .brand-title { font-size: 16px; line-height: 1.2; }
+    .brand-title { font-size: 16px; font-weight: 700; line-height: 1.1; }
+    .brand-meta { color: var(--muted); font-size: 11px; }
 
-    .brand-meta {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0;
-    }
-
-    .brand-mark {
-      width: 25px;
-      height: 25px;
-      border: 1.5px solid var(--text);
-      border-radius: 7px;
-      display: grid;
-      place-items: center;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0;
-    }
-
-    .toplink {
-      font-size: 12px;
-      color: var(--muted);
-      text-decoration: none;
-    }
-
-    .toplink:hover {
-      color: var(--text);
-      text-decoration: underline;
-    }
+    .toplink { font-size: 12px; color: var(--muted); }
+    .toplink:hover { color: var(--text); }
 
     main {
-      max-width: 1050px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 38px 22px 64px;
-    }
-
-    .intro { margin-bottom: 22px; }
-
-    .eyebrow {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 600;
-      margin-bottom: 9px;
-      letter-spacing: .04em;
-      text-transform: uppercase;
+      padding: 32px 20px 56px;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(29px, 4vw, 36px);
-      letter-spacing: -.025em;
-      line-height: 1.08;
-      font-weight: 720;
+      font-size: 32px;
+      font-weight: 700;
     }
 
-    .sub {
-      color: var(--muted);
-      margin: 8px 0 0;
-      font-size: 13px;
-    }
-
-    .update-line {
-      color: var(--muted);
-      margin: 7px 0 0;
-      font-size: 11px;
-    }
+    .sub { color: var(--muted); margin: 6px 0 0; }
+    .update-line { color: var(--muted); margin: 2px 0 0; font-size: 12px; }
 
     .toolbar {
       display: flex;
       gap: 10px;
       align-items: center;
-      margin: 24px 0 15px;
-    }
-
-    .search-wrap {
-      position: relative;
-      flex: 1;
-      min-width: 100px;
-    }
-
-    .search-icon {
-      position: absolute;
-      left: 13px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--muted);
-      pointer-events: none;
+      margin: 22px 0 12px;
     }
 
     input[type="search"] {
-      width: 100%;
-      height: 42px;
+      flex: 1;
+      min-width: 100px;
+      height: 38px;
       border: 1px solid var(--border);
-      border-radius: 9px;
+      border-radius: 4px;
       color: var(--text);
       background: var(--panel);
-      padding: 0 13px 0 37px;
-      font: inherit;
-      outline: none;
-    }
-
-    input[type="search"]:focus {
-      border-color: var(--muted);
-      box-shadow: 0 0 0 3px light-dark(#0000000c, #ffffff0c);
-    }
-
-    .sort-wrap {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--muted);
-      white-space: nowrap;
-      font-size: 12px;
-    }
-
-    select, .image-button {
-      height: 42px;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      background: var(--panel);
-      color: var(--text);
-      font: inherit;
       padding: 0 11px;
+      font: inherit;
     }
 
-    select { max-width: 190px; cursor: pointer; }
+    input[type="search"]:focus, select:focus {
+      outline: 2px solid var(--link);
+      outline-offset: -1px;
+    }
 
-    .category-tag {
-      display: inline-block;
-      border-left: 2px solid #8d65d8;
-      padding: 2px 0 2px 7px;
-      color: var(--muted);
-      font-size: 11px;
-      white-space: nowrap;
+    select {
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+      padding: 0 8px;
+      max-width: 180px;
     }
 
     .statusrow {
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      align-items: center;
       color: var(--muted);
       font-size: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-
-    .count { color: var(--text); font-weight: 650; }
 
     .tablewrap {
       overflow-x: auto;
       background: var(--panel);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border: 1px solid var(--border);
     }
 
     table {
@@ -237,203 +130,124 @@
     }
 
     th {
-      padding: 11px 13px;
-      color: var(--muted);
+      padding: 9px 12px;
       background: var(--panel-soft);
-      font-size: 11px;
-      font-weight: 650;
-      text-transform: uppercase;
-      letter-spacing: .035em;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     td {
-      padding: 13px;
+      padding: 10px 12px;
       border-top: 1px solid var(--border);
-      vertical-align: middle;
     }
 
-    tbody tr:hover {
-      background: light-dark(#efede6, #242328);
-    }
+    tbody tr:hover { background: var(--panel-soft); }
 
-    .num {
-      color: var(--muted);
-      width: 42px;
-      font-variant-numeric: tabular-nums;
-    }
+    .num { color: var(--muted); width: 40px; }
+    .songname { font-weight: 600; }
+    .artist, .cat, .length-value { color: var(--muted); }
+    .length-value { white-space: nowrap; }
 
-    .songname { font-weight: 600; font-size: 14px; }
-    .artist { color: var(--muted); }
+    .audio-link { color: var(--link); }
+    .audio-link:hover { text-decoration: none; }
 
-    .audio-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--link);
-    }
-
-    .audio-link:hover {
-      text-decoration: underline;
-      color: var(--text);
-    }
-
-    .length-value {
-      font-variant-numeric: tabular-nums;
-      white-space: nowrap;
-      color: var(--muted);
-    }
-
-    .empty {
-      padding: 38px 18px;
-      text-align: center;
-      color: var(--muted);
-    }
-
-    .empty strong {
-      color: var(--text);
-      display: block;
-      margin-bottom: 4px;
-    }
+    .empty { padding: 32px 16px; text-align: center; color: var(--muted); }
 
     .note {
-      margin-top: 13px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
+      margin-top: 12px;
       color: var(--muted);
       font-size: 12px;
       display: flex;
       justify-content: space-between;
       gap: 14px;
-      align-items: center;
-    }
-
-    .note a {
-      color: var(--text);
-      text-underline-offset: 3px;
-      white-space: nowrap;
     }
 
     footer {
-      margin-top: 28px;
+      margin-top: 24px;
       display: flex;
       justify-content: space-between;
       color: var(--muted);
       font-size: 11px;
-      gap: 12px;
     }
 
     @media (max-width: 600px) {
-      main { padding: 32px 14px 48px; }
-      .topbar { padding: 0 16px; gap: 10px; }
-      .toplink { font-size: 11px; }
-      .toolbar { align-items: stretch; flex-direction: column; }
-      .sort-wrap { justify-content: space-between; }
-      select { max-width: none; flex: 1; }
-      .note, footer {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+      main { padding: 24px 14px 40px; }
+      .toolbar { flex-direction: column; align-items: stretch; }
+      select { max-width: none; }
+      .note { flex-direction: column; }
     }
   </style>
 </head>
 <body>
-  <div class="root">
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-image-wrap" aria-label="Customizable top-bar image">
-          <svg id="defaultBrandImage" viewBox="0 0 64 64" aria-hidden="true">
-            <rect width="64" height="64" rx="9" fill="#211c2d"/>
-            <path d="M16 12 H48 L54 18 V46 L46 54 H18 L10 46 V20 Z" fill="#8d65d8" stroke="#d9c8ff" stroke-width="2.5" stroke-linejoin="round"/>
-            <path d="M20 18 H44 L48 22 V42 L42 48 H22 L16 42 V24 Z" fill="#5d40a4"/>
-            <path d="M21 25 L28 25 L28 33 L21 33 Z M36 25 L43 25 L43 33 L36 33 Z" fill="#f6f1ff" stroke="#211c2d" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M24 40 L29 36 H35 L40 40 L36 44 H28 Z" fill="#a9f27d" stroke="#211c2d" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M12 12 L18 12 M46 52 L52 52" stroke="#a9f27d" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <img id="customBrandImage" alt="Custom top-bar image" hidden>
-        </div>
-        <div class="brand-copy">
-          <span class="brand-title">poopbox radio</span>
-          <span class="brand-meta">gd songs n stuff</span>
-        </div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-img"><img id="customBrandImage" alt="" hidden></div>
+      <div>
+        <div class="brand-title">poopbox radio</div>
+        <div class="brand-meta">gd songs n stuff</div>
       </div>
-      <a class="toplink" href="https://raw.githubusercontent.com/starquiem/requiems-jukebox-index/main/index.json" target="_blank" rel="noreferrer">view index JSON ↗</a>
-    </header>
+    </div>
+    <a class="toplink" href="https://raw.githubusercontent.com/starquiem/requiems-jukebox-index/main/index.json" target="_blank" rel="noreferrer">index.json</a>
+  </header>
 
-    <main>
-      <section class="intro">
-        <h1>the songs.</h1>
-        <p class="sub">songs i put in here for gd. thats pretty much it.</p>
-        <p class="update-line">last update: <span id="latestUpdate">—</span></p>
-      </section>
+  <main>
+    <h1>the songs.</h1>
+    <p class="sub">songs i put in here for gd. thats pretty much it.</p>
+    <p class="update-line">last update: <span id="latestUpdate">-</span></p>
 
-      <section class="toolbar" aria-label="Song search and sorting">
-        <div class="search-wrap">
-          <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="search" type="search" placeholder="search songs, artists, ids..." autocomplete="off" aria-label="Search songs">
-        </div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="search songs, artists, ids" autocomplete="off" aria-label="Search songs">
 
-        <label class="sort-wrap" for="sortSongs">
-          Sort
-          <select id="sortSongs" aria-label="Sort songs">
-            <option value="index">Index order</option>
-            <option value="name-asc">Name: A–Z</option>
-            <option value="name-desc">Name: Z–A</option>
-            <option value="artist-asc">Artist: A–Z</option>
-            <option value="artist-desc">Artist: Z–A</option>
-            <option value="length-asc">Length: shortest first</option>
-            <option value="length-desc">Length: longest first</option>
-          </select>
-        </label>
+      <select id="sortSongs" aria-label="Sort songs">
+        <option value="index">Index order</option>
+        <option value="name-asc">Name: A-Z</option>
+        <option value="name-desc">Name: Z-A</option>
+        <option value="artist-asc">Artist: A-Z</option>
+        <option value="artist-desc">Artist: Z-A</option>
+        <option value="length-asc">Shortest first</option>
+        <option value="length-desc">Longest first</option>
+      </select>
 
-        <label class="sort-wrap" for="categoryFilter">
-          Category
-          <select id="categoryFilter" aria-label="Filter songs by category">
-            <option value="all">All categories</option>
-          </select>
-        </label>
-      </section>
+      <select id="categoryFilter" aria-label="Filter songs by category">
+        <option value="all">All categories</option>
+      </select>
+    </div>
 
-      <div class="statusrow">
-        <span id="count" class="count">Loading songs…</span>
-        <span id="loadstatus">fetching index.json</span>
-      </div>
+    <div class="statusrow">
+      <span id="count">loading...</span>
+      <span id="loadstatus">fetching index.json</span>
+    </div>
 
-      <div class="tablewrap">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Artist</th>
-              <th>Category</th>
-              <th>Audio</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody id="songs"></tbody>
-        </table>
-        <div id="empty" class="empty" hidden>
-          <strong>nothing found.</strong>
-          try a different search or category.
-        </div>
-      </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Artist</th>
+            <th>Category</th>
+            <th>Audio</th>
+            <th>Length</th>
+          </tr>
+        </thead>
+        <tbody id="songs"></tbody>
+      </table>
+      <div id="empty" class="empty" hidden>nothing found.</div>
+    </div>
 
-      <div class="note">
-        <span>audio is on jukehost. these are song ids, not level ids.</span>
-        <a href="https://github.com/starquiem/shitbox-radio" target="_blank" rel="noreferrer">index on GitHub ↗</a>
-      </div>
+    <div class="note">
+      <span>audio is on jukehost. these are song ids, not level ids.</span>
+      <a href="https://github.com/starquiem/requiems-jukebox-index" target="_blank" rel="noreferrer">index on github</a>
+    </div>
 
-      <footer>
-        <span>shitbox studio</span>
-        <span id="visible">loading songs</span>
-      </footer>
-    </main>
-  </div>
+    <footer>
+      <span>shitbox studio</span>
+      <span id="visible">loading</span>
+    </footer>
+  </main>
 
   <script>
-    const INDEX_URL = "https://raw.githubusercontent.com/starquiem/shitbox-radio/refs/heads/main/index.json";
+    const INDEX_URL = "https://raw.githubusercontent.com/starquiem/requiems-jukebox-index/main/index.json";
     let songs = [];
 
     const tbody = document.getElementById("songs");
@@ -446,27 +260,14 @@
     const loadstatus = document.getElementById("loadstatus");
     const latestUpdate = document.getElementById("latestUpdate");
     const customBrandImage = document.getElementById("customBrandImage");
-    const defaultBrandImage = document.getElementById("defaultBrandImage");
 
     // change this URL if you want a different top-bar image
     const BRAND_IMAGE_URL = "https://www.pngkit.com/png/detail/983-9831909_geometry-dash-cube.png";
 
-    function setBrandImage(imageUrl) {
-      customBrandImage.onload = () => {
-        customBrandImage.hidden = false;
-        defaultBrandImage.hidden = true;
-      };
-
-      customBrandImage.onerror = () => {
-        customBrandImage.hidden = true;
-        defaultBrandImage.hidden = false;
-      };
-
-      customBrandImage.src = imageUrl;
-    }
-
     if (BRAND_IMAGE_URL.trim()) {
-      setBrandImage(BRAND_IMAGE_URL.trim());
+      customBrandImage.onload = () => { customBrandImage.hidden = false; };
+      customBrandImage.onerror = () => { customBrandImage.hidden = true; };
+      customBrandImage.src = BRAND_IMAGE_URL.trim();
     }
 
     function render() {
@@ -550,20 +351,16 @@
         number.textContent = String(index + 1).padStart(2, "0");
 
         const nameCell = document.createElement("td");
-        const name = document.createElement("div");
-        name.className = "songname";
-        name.textContent = song.name;
-        nameCell.append(name);
+        nameCell.className = "songname";
+        nameCell.textContent = song.name;
 
         const artist = document.createElement("td");
         artist.className = "artist";
         artist.textContent = song.artist;
 
         const categoryCell = document.createElement("td");
-        const categoryTag = document.createElement("span");
-        categoryTag.className = "category-tag";
-        categoryTag.textContent = song.category;
-        categoryCell.append(categoryTag);
+        categoryCell.className = "cat";
+        categoryCell.textContent = song.category;
 
         const audioCell = document.createElement("td");
 
@@ -573,10 +370,10 @@
           audio.href = song.url;
           audio.target = "_blank";
           audio.rel = "noreferrer";
-          audio.textContent = "Open audio ↗";
+          audio.textContent = "open";
           audioCell.append(audio);
         } else {
-          audioCell.textContent = "No audio link";
+          audioCell.textContent = "no link";
         }
 
         const lengthCell = document.createElement("td");
@@ -584,8 +381,8 @@
         lengthCell.textContent = Number.isFinite(song.durationSeconds)
           ? formatDuration(song.durationSeconds)
           : song.durationStatus === "loading"
-            ? "Loading…"
-            : "—";
+            ? "..."
+            : "-";
 
         row.append(
           number,
@@ -724,20 +521,11 @@
       } catch (error) {
         loadstatus.textContent = "couldn't load the index";
         latestUpdate.textContent = "unavailable";
-        count.textContent = "Index failed to load";
+        count.textContent = "index failed to load";
         visible.textContent = "check the JSON URL and try again";
 
         empty.hidden = false;
-        empty.replaceChildren();
-
-        const message = document.createElement("strong");
-        message.textContent = "couldn't load the songs.";
-
-        const explanation = document.createElement("span");
-        explanation.textContent =
-          " check that the JSON is public and valid, then refresh the page.";
-
-        empty.append(message, explanation);
+        empty.textContent = "couldn't load the songs. check that the JSON is public and valid, then refresh.";
 
         console.error("Failed to load Requiem song index:", error);
       }
