@@ -3,13 +3,13 @@
   "name": "shitbox radio",
   "id": "shitbox-index",
   "description": "i like apples and bananas - nathan south park",
-  "lastUpdate": 32,
+  "lastUpdate": 50,
   "links": {
     "discord": "https://discord.gg/Svdm56cT"
   },
   "nongs": {
     "hosted": {
-      "cup-de-grace": {
+      "c15ca13d-9605-4f8c-8cde-1e998fee1cbf": {
         "name": "Cup De Grace",
         "artist": "DaGames",
         "category": "NONG",
@@ -17,7 +17,7 @@
         "url": "https://audio.jukehost.co.uk/01a12227-0006-707b-9323-77ae33006497",
         "songs": [823674]
       },
-      "world-wide-noise": {
+      "ac5c9f7e-fce1-4550-9a60-0043e5a36c14": {
         "name": "World Wide Noise",
         "artist": "Pizza Tower Team",
         "category": "NONG",
@@ -25,7 +25,7 @@
         "url": "https://audio.jukehost.co.uk/01a12295-53c9-725d-bcf1-9d55535f1925",
         "songs": [717444]
       },
-      "we-are-stop-the-attack": {
+      "w5933cee9-958b-4224-a3fe-af5ca475b101": {
         "name": "We Are Stop The Attack",
         "artist": "Yoshimasa Terui",
         "category": "NONG",
@@ -33,7 +33,7 @@
         "url": "https://audio.jukehost.co.uk/01a122c2-675c-72f1-833c-7cbeae4cd2a0",
         "songs": [672264]
       },
-      "rush-radish": {
+      "7f099b25-04d0-4979-8156-66f866f71512": {
         "name": "Rush Radish",
         "artist": "uservprips32vl on Tiktok",
         "category": "NONG",
@@ -41,7 +41,7 @@
         "url": "https://audio.jukehost.co.uk/01a1232c-81bb-7201-a6df-8dd387e2d225",
         "songs": [467339]
       },
-      "the-aura-farmer": {
+      "8546d3d4-0c23-4532-9946-269006b768bc": {
         "name": "The Aura Farmer",
         "artist": "Horror Skunx",
         "category": "NONG",
@@ -49,7 +49,7 @@
         "url": "https://audio.jukehost.co.uk/01a122f7-6808-7021-9537-a727cf3a8325",
         "songs": [1191782]
       },
-      "aizo": {
+      "67a42395-3036-4fee-b85f-0497e099bd28": {
         "name": "Aizo",
         "artist": "King Gnu",
         "category": "NONG",
@@ -57,7 +57,7 @@
         "url": "https://audio.jukehost.co.uk/01a1233d-75d3-71a7-862e-59167f5cb86a",
         "songs": [99477]
       },
-      "aizo2009": {
+      "b7eeb66c-9d55-424d-9a90-f604bb2df640": {
         "name": "Aizo ( 2009 Roblox Version )",
         "artist": "Chronocopes on Youtube",
         "category": "NONG",
@@ -65,7 +65,7 @@
         "url": "https://audio.jukehost.co.uk/01a12356-5d5c-710f-885b-026f8d7fa8f8",
         "songs": [99477]
       },
-      "specialz": {
+      "65a29bad-55f3-409d-a0b2-1ccece320e11": {
         "name": "Specialz",
         "artist": "King Gnu",
         "category": "NONG",
@@ -73,7 +73,7 @@
         "url": "https://audio.jukehost.co.uk/01a1233f-5bfe-7066-abc5-e821b0309aba",
         "songs": [110798]
       },
-      "moldova": {
+      "494516ce-c5d7-4e4e-9b18-1d975a9fd017": {
         "name": "Bãtutã din Moldova",
         "artist": "Fanfare Vagabontu",
         "category": "NONG",
@@ -81,7 +81,7 @@
         "url": "https://audio.jukehost.co.uk/01a12347-974e-70ff-a634-33d373668aee",
         "songs": [533927]
       },
-      "charlies-inferno": {
+      "57e3741d-e875-46d9-9721-3bbf5c5f8c72": {
         "name": "Charlie's Inferno",
         "artist": "That Handsome Devil",
         "category": "NONG",
@@ -89,7 +89,7 @@
         "url": "https://audio.jukehost.co.uk/01a1234c-c3cb-719b-9d85-4adadb463201",
         "songs": [508568]
       },
-      "charlies-inferno-jazz": {
+      "5c9f8928-4205-493b-9205-57f8a9b26e78": {
         "name": "Charlie's Inferno ( Jazz Version )",
         "artist": "Matt Dusk",
         "category": "NONG",
@@ -97,7 +97,7 @@
         "url": "https://audio.jukehost.co.uk/01a12352-8dee-70dd-a485-794f00c77f30",
         "songs": [508568]
       },
-      "the-money-grab": {
+      "1f84f6a2-debe-4fef-b279-e90b4c07d0d3": {
         "name": "The Money Grab ( Charlie's Inferno 2 )",
         "artist": "That Handsome Devil",
         "category": "NONG",
@@ -105,7 +105,7 @@
         "url": "https://audio.jukehost.co.uk/01a12352-6381-72fa-924e-ef135cda2466",
         "songs": [905108]
       },
-      "harder-better-faster-stronger": {
+      "0a1a2b9c-978e-4796-9ccc-f6b7e5820f13": {
         "name": "Harder Better Faster Stronger",
         "artist": "Daft Punk",
         "category": "NONG",
@@ -113,7 +113,7 @@
         "url": "https://audio.jukehost.co.uk/01a1236a-4462-7152-9142-f4ab00a06592",
         "songs": [739991]
       },
-      "its-verity": {
+      "38a12fe0-190d-4109-a132-460ca2e36de6": {
         "name": "Hey It's Me, It's Verity!",
         "artist": "Horror Skunx",
         "category": "NONG",
@@ -121,7 +121,7 @@
         "url": "https://audio.jukehost.co.uk/01a1236e-918e-704f-8a4a-32ad559ce9e7",
         "songs": [956677]
       },
-      "verity-band-be-my-friend": {
+      "0f768b77-275d-4a83-a806-44468df7dbdb": {
         "name": "The Verity Band - Be My Friend!",
         "artist": "Horror Skunx",
         "category": "NONG",
@@ -129,7 +129,7 @@
         "url": "https://audio.jukehost.co.uk/01a1236f-a716-7241-a522-d4f1c6e90328",
         "songs": [666777]
       },
-      "master-of-humanity": {
+      "487e7e7c-a689-4050-b1a3-5b38ed58ad03": {
         "name": "Lord Verity - Master of Humanity",
         "artist": "Horror Skunx",
         "category": "NONG",
@@ -137,7 +137,7 @@
         "url": "https://audio.jukehost.co.uk/01a1236f-9deb-7222-b2db-42006c2e6cc5",
         "songs": [587069]
       },
-      "verity-disstrack": {
+      "5f896ae9-ab0d-4388-81e7-2fa8f17414ee": {
         "name": "Verity Disstrack",
         "artist": "Havexy",
         "category": "NONG",
@@ -145,7 +145,7 @@
         "url": "https://audio.jukehost.co.uk/01a12379-da27-7252-a69c-8ade05392e42",
         "songs": [956677]
       },
-      "verity-disstrack-revoxel": {
+      "39729c68-a40d-4e21-8c9d-32ec69c5a900": {
         "name": "Verity Disstrack ( Revoxel Version )",
         "artist": "Havexy",
         "category": "NONG",
@@ -153,7 +153,7 @@
         "url": "https://audio.jukehost.co.uk/01a12393-c697-739d-97a1-da06ce17e2d5",
         "songs": [956677]
       },
-      "virtual-insanity": {
+      "26458cb3-a6f0-4782-a8b6-7d7f500d5fb2": {
         "name": "Virtual Insanity",
         "artist": "Jamiroquai",
         "category": "NONG",
@@ -161,7 +161,7 @@
         "url": "https://audio.jukehost.co.uk/01a123b1-b350-7198-a9da-d97dc993253f",
         "songs": [32207]
       },
-      "jane": {
+      "75a568ba-59f0-4d14-93e7-c6b42975ed31": {
         "name": "Jane!",
         "artist": "AjayRoy",
         "category": "NONG",
@@ -169,7 +169,7 @@
         "url": "https://audio.jukehost.co.uk/01a123b1-6b81-7261-b6c3-dfad7cee99b9",
         "songs": [623104]
               },
-      "grief-x-ai-soccer": {
+      "159c53dd-dace-4cb3-8147-d543b53e4d16": {
         "name": "Stalemate x Argentina AI Muscle",
         "artist": "KittoGMD on Youtube",
         "category": "Mashup",
@@ -177,7 +177,7 @@
         "url": "https://audio.jukehost.co.uk/01a127bb-2d8a-70e4-8f5c-4f295b49352c",
         "songs": [482872]
          },
-      "misery": {
+      "1959dc22-b3f5-471b-9138-7b0c7efb8997": {
         "name": "misery.",
         "artist": "pupsies",
         "category": "NONG",
@@ -185,7 +185,7 @@
         "url": "https://audio.jukehost.co.uk/01a127cf-7a8a-707a-8c53-fe2aac4211ed",
         "songs": [233860]
         },
-      "misery-TLT": {
+      "fb82f072-2fae-4a43-8a44-d64f9df9e3f2": {
         "name": "misery. ( TLT Remix )",
         "artist": "pupsies, The Living Tombstone",
         "category": "NONG",
@@ -193,7 +193,7 @@
         "url": "https://audio.jukehost.co.uk/01a127cf-84f3-70d8-a943-2f4db821d7a7",
         "songs": [233860]
                 },
-      "shiawase-vip": {
+      "315dd199-edf9-4f2d-9b48-c78e141b908d": {
         "name": "Shiawase VIP",
         "artist": "Dion Timmer",
         "category": "NONG",
@@ -201,7 +201,7 @@
         "url": "https://audio.jukehost.co.uk/01a1289a-e45c-72e6-8996-02e91966ee41",
         "songs": [1266014]
           },
-      "shiawase-vip-ai-soccer": {
+      "bdc6a246-e7fb-4627-907d-baebc29e7454": {
         "name": "Shiawase VIP x Argentina AI Muscle",
         "artist": "KittoGMD on Youtube",
         "category": "Mashup",
@@ -209,7 +209,7 @@
         "url": "https://audio.jukehost.co.uk/01a128a5-9e2e-70df-b2bf-b99389ea94e7",
         "songs": [1266014]
            },
-      "my-jealousy": {
+      "c1493581-e536-4bcf-ab4c-ebca1b01fad6": {
         "name": "MY JEALOUSY",
         "artist": "vivi baby, ovg!",
         "category": "NONG",
@@ -217,7 +217,7 @@
         "url": "https://audio.jukehost.co.uk/01a12945-0d68-7264-9dd9-b1d694a9fafe",
         "songs": [701013]
            },
-      "ouasis-ouasis-into-in-the-night": {
+      "ca7cd1c5-d842-47b1-9aaa-1c3c69c247c7": {
         "name": "Ouais Ouais X Into in The Night",
         "artist": "AlexFor3ver on Youtube",
         "category": "Mashup",
@@ -225,7 +225,7 @@
         "url": "https://audio.jukehost.co.uk/01a12d86-9ce0-709b-875a-6ab5cbb9d75b",
         "songs": [787153]
              },
-      "gimme-more": {
+      "9590fadf-460e-4343-a8e5-01fa8023363a": {
         "name": "Gimme More",
         "artist": "Britney Spears",
         "category": "NONG",
